@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>Sim RC Racing – 又一个WordPress站点</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="https://igaoger.github.io/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-components-css" href="https://igaoger.github.io/wp-includes/css/dist/components/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-editor-font-css" href="https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i&ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-editor-css" href="https://igaoger.github.io/wp-includes/css/dist/block-editor/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-nux-css" href="https://igaoger.github.io/wp-includes/css/dist/nux/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-editor-css" href="https://igaoger.github.io/wp-includes/css/dist/editor/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="rise-blocks-common-css-css" href="https://igaoger.github.io/wp-content/plugins/rise-blocks/dist/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://igaoger.github.io/wp-content/plugins/rise-blocks/dist/vendors/font-awesome/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="hestia-clients-bar-css" href="https://igaoger.github.io/wp-content/plugins/themeisle-companion/obfx_modules/companion-legacy/assets/css/hestia/clients-bar.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://igaoger.github.io/wp-content/themes/hestia/assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="hestia-font-sizes-css" href="https://igaoger.github.io/wp-content/themes/hestia/assets/css/font-sizes.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="hestia_style-css" href="https://igaoger.github.io/wp-content/themes/hestia/style.min.css" type="text/css" media="all">
+<style id="hestia_style-inline-css" type="text/css">
+.hestia-top-bar, .hestia-top-bar .widget.widget_shopping_cart .cart_list {
+			background-color: #363537
+		}
+		.hestia-top-bar .widget .label-floating input[type=search]:-webkit-autofill {
+			-webkit-box-shadow: inset 0 0 0px 9999px #363537
+		}.hestia-top-bar, .hestia-top-bar .widget .label-floating input[type=search], .hestia-top-bar .widget.widget_search form.form-group:before, .hestia-top-bar .widget.widget_product_search form.form-group:before, .hestia-top-bar .widget.widget_shopping_cart:before {
+			color: #ffffff
+		} 
+		.hestia-top-bar .widget .label-floating input[type=search]{
+			-webkit-text-fill-color:#ffffff !important 
+		}.hestia-top-bar a, .hestia-top-bar .top-bar-nav li a {
+			color: #ffffff
+		}.hestia-top-bar a:hover, .hestia-top-bar .top-bar-nav li a:hover {
+			color: #eeeeee
+		}
+	
+		a, 
+		.navbar .dropdown-menu li:hover > a,
+		.navbar .dropdown-menu li:focus > a,
+		.navbar .dropdown-menu li:active > a,
+		.navbar .navbar-nav > li .dropdown-menu li:hover > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:hover,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:focus,
+		a:hover, 
+		.card-blog a.moretag:hover, 
+		.card-blog a.more-link:hover, 
+		.widget a:hover,
+		.has-text-color.has-accent-color,
+		p.has-text-color a {
+		    color:#e91e63;
+		}
+		
+		.pagination span.current, .pagination span.current:focus, .pagination span.current:hover {
+			border-color:#e91e63
+		}
+		
+		button,
+		button:hover,
+		.woocommerce .track_order button[type="submit"],
+		.woocommerce .track_order button[type="submit"]:hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="button"],
+		input[type="button"]:hover,
+		input[type="submit"],
+		input[type="submit"]:hover,
+		input#searchsubmit, 
+		.pagination span.current, 
+		.pagination span.current:focus, 
+		.pagination span.current:hover,
+		.btn.btn-primary,
+		.btn.btn-primary:link,
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary.active:focus, 
+		.btn.btn-primary.active:hover,
+		.btn.btn-primary:active:hover, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover,
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.hestia-sidebar-open.btn.btn-rose:focus,
+		.hestia-sidebar-close.btn.btn-rose:focus,
+		.label.label-primary,
+		.hestia-work .portfolio-item:nth-child(6n+1) .label,
+		.nav-cart .nav-cart-content .widget .buttons .button,
+		.has-accent-background-color[class*="has-background"] {
+		    background-color: #e91e63;
+		}
+		
+		@media (max-width: 768px) { 
+	
+			.navbar-default .navbar-nav>li>a:hover,
+			.navbar-default .navbar-nav>li>a:focus,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:hover,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:focus,
+			.navbar button.navbar-toggle:hover,
+			.navbar .navbar-nav li:hover > a i {
+			    color: #e91e63;
+			}
+		}
+		
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close),
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button),
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		input[type="submit"], 
+		input[type="button"], 
+		.btn.btn-primary,
+		.widget_product_search button[type="submit"],
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    -webkit-box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		    box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		}
+		
+		.card .header-primary, .card .content-primary,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    background: #e91e63;
+		}
+		
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button):hover,
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close):hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="submit"]:hover,
+		input[type="button"]:hover,
+		input#searchsubmit:hover, 
+		.widget_product_search button[type="submit"]:hover,
+		.pagination span.current, 
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover, 
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.pagination span.current:hover,
+		.everest-forms button[type=submit].everest-forms-submit-button:hover,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:focus,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:active {
+			-webkit-box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+		    box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+			color: #fff;
+		}
+		
+		.form-group.is-focused .form-control {
+			background-image: -webkit-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: -webkit-linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+		}
+		
+		.navbar:not(.navbar-transparent) li:not(.btn):hover > a,
+		.navbar li.on-section:not(.btn) > a, 
+		.navbar.full-screen-menu.navbar-transparent li:not(.btn):hover > a,
+		.navbar.full-screen-menu .navbar-toggle:hover,
+		.navbar:not(.navbar-transparent) .nav-cart:hover, 
+		.navbar:not(.navbar-transparent) .hestia-toggle-search:hover {
+				color:#e91e63}
+		
+		.has-text-color.has-background-color-color { color: #E5E5E5; }
+		.has-background-color-background-color[class*="has-background"] { background-color: #E5E5E5; }
+		
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){ padding-top:15px;  padding-bottom:15px;  padding-left:33px;  padding-right:33px; }
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, input[type="submit"].search-submit, .hestia-view-cart-wrapper .added_to_cart.wc-forward, .woocommerce-product-search button, .woocommerce-cart .actions .button, #secondary div[id^=woocommerce_price_filter] .button, .woocommerce div[id^=woocommerce_widget_cart].widget .buttons .button, .searchform input[type=submit], .searchform button, .search-form:not(.media-toolbar-primary) input[type=submit], .search-form:not(.media-toolbar-primary) button, .woocommerce-product-search input[type=submit], .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){border-radius:3px;}
+@media (min-width: 769px){
+			.page-header.header-small .hestia-title,
+			.page-header.header-small .title,
+			h1.hestia-title.title-in-content,
+			.main article.section .has-title-font-size {
+				font-size: 42px;
+			}}
+</style>
+<link rel="stylesheet" id="font-awesome-5-all-css" href="https://igaoger.github.io/wp-content/themes/hestia/assets/font-awesome/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="https://igaoger.github.io/wp-content/themes/hestia/assets/font-awesome/css/v4-shims.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="hestia_fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&subset=latin%2Clatin-ext&ver=2.5.6" type="text/css" media="all">
+<link rel="stylesheet" id="rise-blocks-fonts-css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" type="text/css" media="all">
+<script type="text/javascript" src="https://igaoger.github.io/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://igaoger.github.io/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+
+
+
+
+
+
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>			<style type="text/css" media="all" id="rise-blocks-block-styles">
+				
+				@media (max-width: 991px) { 
+									}
+
+				@media (max-width: 767px) {
+									}
+			</style>
+			</head>
+
+<body class="home page-template-default page page-id-4284 blog-post header-layout-default">
+		<div class="wrapper ">
+		<header class="header ">
+			<div style="display: none"></div>		<nav class="navbar navbar-default navbar-fixed-top  navbar-color-on-scroll navbar-transparent hestia_left">
+						<div class="container">
+						<div class="navbar-header">
+			<div class="title-logo-wrapper">
+				<a class="navbar-brand" href="https://igaoger.github.io/" title="Sim RC Racing">
+					<p>Sim RC Racing</p></a>
+			</div>
+								<div class="navbar-toggle-wrapper">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="sr-only">Toggle Navigation</span>
+			</button>
+					</div>
+				</div>
+		<div id="main-navigation" class="collapse navbar-collapse"><ul id="menu-default-top-menu" class="nav navbar-nav"><li id="menu-item-4292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4292"><a title="Blog" href="https://igaoger.github.io/d41d8-blog/">Blog</a></li>
+<li id="menu-item-4290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4290"><a title="About Sim RC" href="https://igaoger.github.io/about-sim-rc/">About Sim RC</a></li>
+<li id="menu-item-4291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4291"><a title="示例页面" href="https://igaoger.github.io/sample-page/">示例页面</a></li>
+</ul></div>			</div>
+					</nav>
+				</header>
+		<div id="carousel-hestia-generic" class="carousel slide" data-ride="carousel">
+			<div class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					
+		<div class="item active">
+			<div class="page-header">
+				
+				<div class="container">
+										<div class="row hestia-big-title-content">
+								<div class="
+		 big-title-slider-content text-center col-sm-8 col-sm-offset-2 		">
+							<h1 class="hestia-title">New Game in Town</h1>
+										<span class="sub-title">Beatiful, Elegantly Coded, One-Page WordPress Theme for Business</span>
+										<div class="buttons">
+					<a href="#" title="See More" class="btn btn-primary">See More</a>
+									</div>
+					</div>
+							</div>
+									</div>
+
+				<div class="header-filter" style="background-image: url(https://igaoger.github.io/wp-content/uploads/2019/07/architecture-1.jpg)"></div>
+							</div>
+		</div>
+						</div>
+			</div>
+		</div>
+			<div class="main  main-raised ">
+				<section class="hestia-features " id="features" data-sorder="hestia_features">
+						<div class="container">
+									<div class="row">
+						<div class="col-md-8 col-md-offset-2 hestia-features-title-area">
+							<h2 class="hestia-title">Why our product is the best</h2><h5 class="description">You will find these qualities in all of our products</h5>						</div>
+					</div>
+							<div class="hestia-features-content">
+		<div class="row">				<div class="col-xs-12 col-md-4 feature-box">
+					<div class="hestia-info">
+						<a href="#">									<div class="icon" style="color:#e91e63">
+				<i class="fa fa-wechat"></i>
+										</div>
+																									<h4 class="info-title">Responsive</h4>
+																				</a>
+															<p>Showcase the same content across all devices. It can be a tablet, phone or laptop. Components used in the theme are designed to look good on smaller screen size too.</p>
+											</div>
+				</div>
+								<div class="col-xs-12 col-md-4 feature-box">
+					<div class="hestia-info">
+						<a href="#">									<div class="icon" style="color:#01bcd4">
+				<i class="fa fa-check"></i>
+										</div>
+																									<h4 class="info-title">Quality</h4>
+																				</a>
+															<p>We frequently release updates for our products in order to add new features and keep it compatible with niche plugins.</p>
+											</div>
+				</div>
+								<div class="col-xs-12 col-md-4 feature-box">
+					<div class="hestia-info">
+						<a href="#">									<div class="icon" style="color:#4caf50">
+				<i class="fa fa-support"></i>
+										</div>
+																									<h4 class="info-title">Support</h4>
+																				</a>
+															<p>A collection of docs can be found on our website to help you achieve what you need using our product. Assistance by email can be provided if you need it.</p>
+											</div>
+				</div>
+				</div>		</div>
+									</div>
+					</section>
+				<section class="hestia-team " id="team" data-sorder="hestia_team">
+						<div class="container">
+									<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center hestia-team-title-area">
+							<h2 class="hestia-title">Meet our team</h2><h5 class="description">Provide basic info such as avatar, biography and contact links about your employees.</h5>						</div>
+					</div>
+							<div class="hestia-team-content">
+				<div class="row">					<div class="col-xs-12 col-ms-6 col-sm-6">
+						<div class="card card-profile card-plain">
+							<div class="col-md-5">
+								<div class="card-image">
+									<img class="img" src="https://igaoger.github.io/wp-content/uploads/2019/03/1.jpg" alt="Desmond Purpleson" title="Desmond Purpleson">																	</div>
+							</div>
+							<div class="col-md-7">
+								<div class="content">
+                                    																			<h4 class="card-title">Desmond Purpleson</h4>
+																												<h6 class="category text-muted">CEO</h6>
+																												<p class="card-description">Locavore pinterest chambray affogato art party, forage coloring book typewriter. Bitters cold selfies, retro celiac sartorial mustache.</p>
+									                                    																				<div class="footer">
+												<a href="http://facebook.com" class="btn btn-just-icon btn-simple"><i class="fa fa-facebook"></i></a><a href="http://plus.google.com" class="btn btn-just-icon btn-simple"><i class="fa fa-google-plus"></i></a><a href="http://twitter.com" class="btn btn-just-icon btn-simple"><i class="fa fa-twitter"></i></a><a href="http://linkedin.com" class="btn btn-just-icon btn-simple"><i class="fa fa-linkedin"></i></a>											</div>
+																			</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xs-12 col-ms-6 col-sm-6">
+						<div class="card card-profile card-plain">
+							<div class="col-md-5">
+								<div class="card-image">
+									<img class="img" src="https://igaoger.github.io/wp-content/uploads/2019/03/2.jpg" alt="Parsley Pepperspray" title="Parsley Pepperspray">																	</div>
+							</div>
+							<div class="col-md-7">
+								<div class="content">
+                                    																			<h4 class="card-title">Parsley Pepperspray</h4>
+																												<h6 class="category text-muted">Marketing Specialist</h6>
+																												<p class="card-description">Craft beer salvia celiac mlkshk. Pinterest celiac tumblr, portland salvia skateboard cliche thundercats. Tattooed chia austin hell.</p>
+									                                    																				<div class="footer">
+												<a href="http://facebook.com" class="btn btn-just-icon btn-simple"><i class="fa fa-facebook"></i></a><a href="http://twitter.com" class="btn btn-just-icon btn-simple"><i class="fa fa-twitter"></i></a><a href="http://pinterest.com" class="btn btn-just-icon btn-simple"><i class="fa fa-pinterest"></i></a><a href="http://linkedin.com" class="btn btn-just-icon btn-simple"><i class="fa fa-linkedin"></i></a>											</div>
+																			</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xs-12 col-ms-6 col-sm-6">
+						<div class="card card-profile card-plain">
+							<div class="col-md-5">
+								<div class="card-image">
+									<img class="img" src="https://igaoger.github.io/wp-content/uploads/2019/03/3.jpg" alt="Desmond Eagle" title="Desmond Eagle">																	</div>
+							</div>
+							<div class="col-md-7">
+								<div class="content">
+                                    																			<h4 class="card-title">Desmond Eagle</h4>
+																												<h6 class="category text-muted">Graphic Designer</h6>
+																												<p class="card-description">Pok pok direct trade godard street art, poutine fam typewriter food truck narwhal kombucha wolf cardigan butcher whatever pickled you.</p>
+									                                    																				<div class="footer">
+												<a href="http://facebook.com" class="btn btn-just-icon btn-simple"><i class="fa fa-facebook"></i></a><a href="http://twitter.com" class="btn btn-just-icon btn-simple"><i class="fa fa-twitter"></i></a><a href="http://linkedin.com" class="btn btn-just-icon btn-simple"><i class="fa fa-linkedin"></i></a><a href="http://dribbble.com" class="btn btn-just-icon btn-simple"><i class="fa fa-dribbble"></i></a>											</div>
+																			</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-xs-12 col-ms-6 col-sm-6">
+						<div class="card card-profile card-plain">
+							<div class="col-md-5">
+								<div class="card-image">
+									<img class="img" src="https://igaoger.github.io/wp-content/uploads/2019/03/4.jpg" alt="Ruby Von Rails" title="Ruby Von Rails">																	</div>
+							</div>
+							<div class="col-md-7">
+								<div class="content">
+                                    																			<h4 class="card-title">Ruby Von Rails</h4>
+																												<h6 class="category text-muted">Lead Developer</h6>
+																												<p class="card-description">Small batch vexillologist 90's blue bottle stumptown bespoke. Pok pok tilde fixie chartreuse, VHS gluten-free selfies wolf hot.</p>
+									                                    																				<div class="footer">
+												<a href="http://github.com" class="btn btn-just-icon btn-simple"><i class="fa fa-github-square"></i></a><a href="http://facebook.com" class="btn btn-just-icon btn-simple"><i class="fa fa-facebook"></i></a><a href="http://twitter.com" class="btn btn-just-icon btn-simple"><i class="fa fa-twitter"></i></a><a href="http://linkedin.com" class="btn btn-just-icon btn-simple"><i class="fa fa-linkedin"></i></a>											</div>
+																			</div>
+							</div>
+						</div>
+					</div>
+					</div>			</div>
+						</div>
+					</section>
+		        <section class="hestia-ribbon section section-image" id="ribbon" data-sorder="hestia_ribbon" style="background-image: url( https://igaoger.github.io/wp-content/uploads/2019/07/architecture-1.jpg);">
+			            <div class="container">
+                <div class="row hestia-xs-text-center hestia-like-table hestia-ribbon-content">
+					                    <div class="col-md-8 hestia-ribbon-content-left">
+						                            <h2 class="hestia-title" style="margin:0;">
+								Subscribe to our Newsletter                            </h2>
+							                    </div>
+                    <div class="col-md-4 text-center hestia-ribbon-content-right">
+						<a href="#" class="btn btn-md btn-primary hestia-subscribe-button">Subscribe</a>                    </div>
+                </div>
+            </div>
+        </section>
+		        <section class="hestia-testimonials " id="testimonials" data-sorder="hestia_testimonials">
+			            <div class="container">
+				                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center hestia-testimonials-title-area">
+							<h2 class="hestia-title">What clients say</h2><h5 class="description">People that are using our products are happy to share their experience.</h5>                        </div>
+                    </div>
+					        <div class="hestia-testimonials-content">
+		<div class="row">                <div class="col-xs-12 col-ms-6 col-sm-6 col-md-4">
+                    <div class="card card-testimonial card-plain">
+						                            <div class="card-avatar">
+								<img class="img" src="https://igaoger.github.io/wp-content/uploads/2019/03/5.jpg" alt="Inverness McKenzie" title="Inverness McKenzie">                            </div>
+						                        <div class="content">
+							                                <h4 class="card-title">Inverness McKenzie</h4>
+														                                <h6 class="category text-muted">Business Owner</h6>
+														                                <p class="card-description">"We have no regrets! After using your product my business skyrocketed! I made back the purchase price in just 48 hours! I couldn't have asked for more than this."</p>
+							                        </div>
+                    </div>
+                </div>
+				                <div class="col-xs-12 col-ms-6 col-sm-6 col-md-4">
+                    <div class="card card-testimonial card-plain">
+						                            <div class="card-avatar">
+								<img class="img" src="https://igaoger.github.io/wp-content/uploads/2019/03/6.jpg" alt="Hanson Deck" title="Hanson Deck">                            </div>
+						                        <div class="content">
+							                                <h4 class="card-title">Hanson Deck</h4>
+														                                <h6 class="category text-muted">Independent Artist</h6>
+														                                <p class="card-description">"Your company is truly upstanding and is behind its product 100 percent. Hestia is worth much more than I paid. I like Hestia more each day because it makes easier."</p>
+							                        </div>
+                    </div>
+                </div>
+				                <div class="col-xs-12 col-ms-6 col-sm-6 col-md-4">
+                    <div class="card card-testimonial card-plain">
+						                            <div class="card-avatar">
+								<img class="img" src="https://igaoger.github.io/wp-content/uploads/2019/03/7.jpg" alt="Natalya Undergrowth" title="Natalya Undergrowth">                            </div>
+						                        <div class="content">
+							                                <h4 class="card-title">Natalya Undergrowth</h4>
+														                                <h6 class="category text-muted">Freelancer</h6>
+														                                <p class="card-description">"Thank you for making it painless, pleasant and most of all hassle free! I am so pleased with this product. Dude, your stuff is great! I will refer everyone I know."</p>
+							                        </div>
+                    </div>
+                </div>
+				</div>        </div>
+		            </div>
+			        </section>
+				<section class="hestia-blogs " id="blog" data-sorder="hestia_blog">
+						<div class="container">
+									<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center hestia-blogs-title-area">
+							<h2 class="hestia-title">Blog</h2><h5 class="description">Display the latest posts on the front page.</h5>						</div>
+					</div>
+									<div class="hestia-blog-content">
+				<div class="row">			<article class="col-xs-12 col-ms-10 col-ms-offset-1 col-sm-8 col-sm-offset-2 col-md-4 hestia-blog-item">
+				<div class="card card-plain card-blog">
+										<div class="content">
+						<h6 class="category"><a href="https://igaoger.github.io/category/uncategorized/" title="View all posts in 未分类" rel="tag">未分类</a> </h6>
+						<h4 class="card-title entry-title">
+							<a class="blog-item-title-link" href="https://igaoger.github.io/hello-world/" title="世界，您好！" rel="bookmark">
+								世界，您好！							</a>
+						</h4>
+						<p class="card-description">欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
+					</div>
+				</div>
+				</article>
+							<article class="col-xs-12 col-ms-10 col-ms-offset-1 col-sm-8 col-sm-offset-2 col-md-4 hestia-blog-item">
+				<div class="card card-plain card-blog">
+												<div class="card-image">
+								<a href="https://igaoger.github.io/sed-nimis-multa/" title="And so the adventure begins">
+									<img width="360" height="240" src="https://igaoger.github.io/wp-content/uploads/2019/07/umbrella.jpg" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="">								</a>
+							</div>
+											<div class="content">
+						<h6 class="category"><a href="https://igaoger.github.io/category/travel/" title="View all posts in Travel" rel="tag">Travel</a> </h6>
+						<h4 class="card-title entry-title">
+							<a class="blog-item-title-link" href="https://igaoger.github.io/sed-nimis-multa/" title="And so the adventure begins" rel="bookmark">
+								And so the adventure begins							</a>
+						</h4>
+						<p class="card-description">Sic enim censent, oportunitatis esse beate vivere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videsne quam sit magna dissensio? Ergo, si semel tristior effectus est, hilara vita amissa est? Quam illa ardentis amores excitaret<a class="moretag" href="https://igaoger.github.io/sed-nimis-multa/"> Read more…</a></p>
+					</div>
+				</div>
+				</article>
+							<article class="col-xs-12 col-ms-10 col-ms-offset-1 col-sm-8 col-sm-offset-2 col-md-4 hestia-blog-item">
+				<div class="card card-plain card-blog">
+												<div class="card-image">
+								<a href="https://igaoger.github.io/pyrrhonem-aut-aristonem/" title="We rise by lifting others">
+									<img width="360" height="240" src="https://igaoger.github.io/wp-content/uploads/2019/07/architecture-1.jpg" class="attachment-hestia-blog size-hestia-blog wp-post-image" alt="">								</a>
+							</div>
+											<div class="content">
+						<h6 class="category"><a href="https://igaoger.github.io/category/travel/" title="View all posts in Travel" rel="tag">Travel</a> </h6>
+						<h4 class="card-title entry-title">
+							<a class="blog-item-title-link" href="https://igaoger.github.io/pyrrhonem-aut-aristonem/" title="We rise by lifting others" rel="bookmark">
+								We rise by lifting others							</a>
+						</h4>
+						<p class="card-description">Duo Reges: constructio interrete Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur id non ita fit? Cupiditates non Epicuri divisione finiebat, sed sua satietate. Scaevola tribunus plebis ferret ad plebem vellentne de ea re<a class="moretag" href="https://igaoger.github.io/pyrrhonem-aut-aristonem/"> Read more…</a></p>
+					</div>
+				</div>
+				</article>
+				</div><div class="row"></div>				</div>
+							</div>
+					</section>
+				<section class="hestia-contact contactus section-image" id="contact" data-sorder="hestia_contact" style="background-image: url(https://igaoger.github.io/wp-content/uploads/2019/07/architecture-1.jpg);">
+						<div class="container">
+								<div class="row">
+					<div class="col-md-5 hestia-contact-title-area">
+													<h2 class="hestia-title">Get in Touch</h2>
+																			<h5 class="description">You need more information about us?</h5>
+												<div class="hestia-description"><div class="hestia-info info-horizontal">
+<div class="icon icon-primary"><i class="fa fa-map-marker"></i></div>
+<div class="description">
+<h4 class="info-title" style="font-size: 18px">Find us at the office</h4>
+<p style="color: #ccc">Bld Mihail Kogalniceanu, nr. 8, 7652 Bucharest, Romania</p>
+
+</div>
+</div>
+<div class="hestia-info info-horizontal">
+<div class="icon icon-primary"><i class="fa fa-mobile"></i></div>
+<div class="description">
+<h4 class="info-title" style="font-size: 18px">Give us a ring</h4>
+<p style="color: #ccc">Michael Jordan +40 762 321 762 Mon - Fri, 8:00-22:00</p>
+
+</div>
+</div></div>					</div>
+											<div class="col-md-5 col-md-offset-2 hestia-contact-form-col">
+							<div class="card card-contact">
+																	<div class="header header-raised header-primary text-center">
+										<h4 class="card-title">Contact Us</h4>
+									</div>
+																<div class="content">
+									[wpforms id="4228"]								</div>
+							</div>
+						</div>
+										</div>
+							</div>
+					</section>
+							<footer class="footer footer-black footer-big">
+						<div class="container">
+																<div class="hestia-bottom-footer-content"><ul id="menu-default-top-menu-1" class="footer-menu pull-left"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4292"><a href="https://igaoger.github.io/d41d8-blog/">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4290"><a href="https://igaoger.github.io/about-sim-rc/">About Sim RC</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4291"><a href="https://igaoger.github.io/sample-page/">示例页面</a></li>
+</ul>					<div class="copyright pull-right">
+				Hestia | Developed by <a href="https://themeisle.com" rel="nofollow">ThemeIsle</a>			</div>
+			</div>			</div>
+					</footer>
+				</div>
+	</div>
+<script type="text/javascript" src="https://igaoger.github.io/wp-content/themes/hestia/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://igaoger.github.io/wp-includes/js/jquery/ui/core.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var requestpost = {"ajaxurl":"https:\/\/igaoger.github.io\/wp-admin\/admin-ajax.php","disable_autoslide":"","masonry":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://igaoger.github.io/wp-content/themes/hestia/assets/js/script.min.js"></script>
+</body>
+</html>
